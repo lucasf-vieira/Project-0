@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Search</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <style>
+      .row > div {
+        padding: 20px;
+        background-color: teal;
+        border: 2px solid black;
+      }
+
+      #search-bar {
+        display: flex;
+        z-index: 3;
+        height: 44px;
+        border: 1px solid #5f6368;
+        box-shadow: none;
+        border-radius: 24px;
+        margin: 0 auto;
+        width: 638px;
+        width: auto;
+        max-width: 584px;
+      }
+
+      #search-text {
+        background-color: transparent;
+        border: none;
+        margin: 0;
+        padding: 0;
+        color: #e8eaed;
+        word-wrap: break-word;
+        outline: none;
+        display: flex;
+        -webkit-tap-highlight-color: transparent;
+        margin-top: -37px;
+      }
+
+      #page-div {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        text-align: center;
+      }
+
+      #google-logo {
+        display: flex;
+        flex-direction: column;
+        margin-top: auto;
+        margin-bottom: 20px;
+        min-height: fit-content;
+      }
+
+      #second-div {
+        margin-bottom: auto;
+      }
+
+      body {
+        height: 100vh;
+        width: 100vw;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="page-div">
+      <div id="google-logo">
+        <img src="../resources/google_logo.png" />
+      </div>
+      <div id="second-div">
+        <form action="https://www.google.com/search">
+          <div id="search-bar">
+            <input id="search-text" type="text" name="q" />
+          </div>
+          <input type="submit" value="Google Search" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
