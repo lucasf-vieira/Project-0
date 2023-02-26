@@ -1,14 +1,5 @@
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height: 100px;
-}
-
-.row > div {
-  padding: 20px;
-  background-color: teal;
-  border: 2px solid black;
+#search-icon-div {
+  display: flex;
 }
 
 #search-bar {
@@ -38,7 +29,6 @@ img {
   display: flex;
   flex-direction: column;
   height: 100%;
-  text-align: center;
 }
 
 #google-logo {
@@ -61,6 +51,22 @@ img {
   max-width: 640px;
   min-width: 580px;
   justify-content: center;
+}
+
+#input-div:hover {
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  border-color: rgba(223, 225, 229, 0);
+}
+
+#search-button {
+  background-color: #f8f9fa;
+  height: 54px;
+  width: 134px;
+  outline: none;
+  border: 1px solid #f8f9fa;
+  font-size: 14px;
+  font-family: arial, sans-serif;
+  border-radius: 4px;
 }
 
 body {
